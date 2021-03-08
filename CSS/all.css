@@ -515,7 +515,7 @@ video {
     font-size: 45px;
     letter-spacing: 0.05em;
     color: white;
-    padding-bottom: 35px;
+    padding-bottom: 30px;
 }
 
 /* 自我簡介-右半邊內容-文字段落 */
@@ -530,6 +530,12 @@ video {
 /* 自我簡介-右半邊內容-第一段文字 */
 .textPast {
     padding-bottom: 40px;
+}
+
+@media(max-width:1366px) {
+    .aboutMe-content {
+        padding: 30px 5px;
+    }
 }
 
 @media(max-width:884px) {
@@ -889,7 +895,7 @@ video {
     font-size: 45px;
     letter-spacing: 0.05em;
     color: black;
-    padding: 185px 0 67px 0;
+    padding: 185px 0 50px 0;
 }
 
 /* 兩個專案的外層設定 */
@@ -977,7 +983,6 @@ video {
 
     .projects h3 {
         font-size: 35px;
-        padding-bottom: 20px;
         text-shadow: rgb(255, 255, 255) .1px .1px 30px;
     }
 
