@@ -1,184 +1,1161 @@
-<!DOCTYPE html>
-<html lang="en">
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yin's Resume</title>
-    <link rel="icon" href="https://upload.cc/i1/2021/03/02/YtDbKZ.png">
-    <meta name="description" content="本網站使用Figma來設計，並手刻html和css，本網站從自我簡介到工作經歷都呈現在頁面上。">
-    <meta name="keywords" content="Yin, 網頁設計師 , 求職 ,網頁履歷">
-    <meta property="og:site_name" content="Yin的網頁履歷" />
-    <meta property="og:title" content="YinYin">
-    <meta property="og:description" content="本網站使用Figma來設計，並手刻html和css，本網站從自我簡介到工作經歷都呈現在頁面上。">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://mg-chen-4.github.io/" />
-    <meta name="site_title" content="Yin的網頁設計師求職履歷">
-    <link rel="stylesheet" href="CSS/all.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,500;0,600;0,700;0,800;1,400&display=swap"
-        rel="stylesheet">
-</head>
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset CSS end */
+
+/* 設定容器大小與文字等樣式 */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none
+}
 
 
-<body>
-    <div class="container">
-        <div class="header">
-            <a href="#">
-                <h1 class="logo">YinYinLogo</h1>
-            </a>
-            <label for="menu-control" class="menu-btn"></label>
-            <span>選單</span>
-            <input id="menu-control" type="checkbox">
-            <ul class="menu">
-                <li><label for="menu-control"><a href="#title1">About</a></label></li>
-                <li><a href="#title2">Experience</a></li>
-                <li><a href="#title3">Project</a></li>
-                <li><a href="#title4">Contact</a></li>
-            </ul>
-        </div>
-        <div class="banner">
-            <div class="videoBG">
-                <video src="https://archive.org/download/yin-video/YIN-video.mp4" muted loop autoplay></video>
-            </div>
-            <div class="textAnimation">
-                <h2 data-text="NICE TO SEE YOU !">NICE TO SEE YOU !</h2>
-            </div>
-        </div>
-        <div id="title1" class="about">
-            <div class="bio">
-                <img class="headShot" src="images/YIN image.svg" alt="headShot">
-                <h4 class="bio-name">Chen Yin Yin</h4>
-                <div class="bio-content">
-                    <ul>
-                        <li class="bio-columns">
-                            <img class="icon-map" src="images/icon/map.svg" alt="icon-map">
-                            <p>Taipei</p>
-                        </li>
-                        <li class="bio-columns">
-                            <img class="icon-school" src="images/icon/school.svg" alt="icon-school">
-                            <p>台南應用科技大學 視覺傳達設計系</p>
-                        </li>
-                        <li class="bio-columns">
-                            <img class="icon-email" src="images/icon/email.svg" alt="icon-email">
-                            <p>yinyin0414@gmail.com</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="aboutMe-content">
-                <h3>ABOUT ME</h3>
-                <p class="textPast">
-                    你好，我是陳音因，過去是一名影音設計師，<br>
-                    從事影片剪輯、2D動畫製作，以及資料視覺化等設計。<br>
-                </p>
-                <p class="textNow">
-                    我喜歡嘗試新事物、學習新的技術。<br>
-                    目前正在學習網頁前端設計相關的工具與技能，<br>
-                    朝優秀的網頁設計師邁進！<br>
-                </p>
-            </div>
-        </div>
-        <div id="title2" class="experience">
-            <h3>EXPERIENCE</h3>
-            <ul class="experience-content">
-                <li class="work">
-                    <div class="company">
-                        <img src="images/icon/film.svg" alt=" film-icon">
-                        <p>廣告行銷製作公司</p>
-                    </div>
-                    <div class="work-description">
-                        <div class="job">
-                            <h4 class="job-title">製片助理</h4>
-                            <p>► 購買線上影音素材、道具與場地租借</p>
-                            <p>► 現場拍攝支援、申請公播權、勘景</p>
-                        </div>
-                        <div class="skills">
-                            <h4 class="job-skill">工作技能</h4>
-                            <p>► Illustrator & Photoshop</p>
-                            <p>► Keynote </p>
-                        </div>
-                </li>
-                <li class="work">
-                    <div class="company">
-                        <img src="images/icon/medicine.svg" alt="medicine-icon">
-                        <p>醫藥產業行銷公司</p>
-                    </div>
-                    <div class="work-description">
-                        <div class="job">
-                            <h4 class="job-title">影音設計師</h4>
-                            <p>► 開場特效、週年回顧影片、訪談錄製</p>
-                            <p>► 數位課程後製、衛教動畫、Slide設計</p>
-                        </div>
-                        <div class="skills">
-                            <h4 class="job-skill">工作技能</h4>
-                            <p>► Premiere & After Effects</p>
-                            <p>► Lightroom</p>
-                        </div>
-                    </div>
-                </li>
-                <li class="work">
-                    <div class="company">
-                        <img src="images/icon/web.svg" alt="web-icon">
-                        <p>Ｏngoing...</p>
-                    </div>
-                    <div class="work-description">
-                        <div class="job">
-                            <h4 class="job-title">網頁設計師</h4>
-                            <p>► 網站介面視覺、維護，設計流程規劃</p>
-                            <p>► 保留排版彈性、前端網頁切版</p>
-                        </div>
-                        <div class="skills">
-                            <h4 class="job-skill">工作技能</h4>
-                            <p>► HTML & CSS & RWD</p>
-                            <p>► Figma</p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div id="title3" class="projects">
-            <div class="projects-content">
-                <h3>PROJECTS</h3>
-                <ul class="webDesign">
-                    <li>
-                        <a href="https://www.figma.com/file/ZRzAgHoGlcd1tA78dlsIJy/Cook-Course?node-id=0%3A1"
-                            target="_blank" class="link">
-                            <img src="images/UI首頁.svg" alt="UI-Img">
-                            <p>前往專案</p>
-                        </a>
-                        <div class="projects-name">
-                            <h5>烘焙坊網站視覺設計</h5>
-                            <p>UI 個人練習作品 (Figma)</p>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="https://www.figma.com/file/YMmeECJXYFLDGsK8lwnO50/Yin-s-Resume?node-id=0%3A1"
-                            target="_blank" class="link">
-                            <img src="images/My Resume.svg" alt="resume-Img">
-                            <p>前往專案</p>
-                        </a>
-                        <div class="projects-name">
-                            <h5>個人履歷網站製作</h5>
-                            <p>本網站 (Figma / html+css)</p>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div id="title4" class="contact">
-            <h3>Thank you for sticking to the end.</h3>
-            <img class="emailIcon" src="images/icon/Email baggier.svg" alt="emailIcon">
-            <p>Shot me a mail at</p>
-            <h4>yinyin0414@gmail.com</h4>
-            <div class="copyright">
-                <p>Designed by YIN YIN</p>
-                <p>© 2021</p>
-            </div>
-        </div>
-    </div>
+/* 主架構 */
+.container {
+    /* margin: 0 auto; */
+    max-width: 100%;
+    margin-right: calc(100% - 100vw);
+}
 
-</body>
+.header {
+    width: 100%;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    background: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 300;
+}
 
-</html>
+/* Logo 圖片取代文字 */
+.logo {
+    background: url(/images/logo/YIN\ YIN.svg) no-repeat;
+    width: 143px;
+    height: 30px;
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 30px 0px 30px 60px;
+}
+
+@media(max-width:884px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+}
+
+@media(max-width:884px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo {
+        margin-right: 30px;
+    }
+}
+
+/* 選單 */
+.menu-btn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: none;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+.menu-btn::before {
+    content: '';
+    position: absolute;
+    height: 4px;
+    left: 4px;
+    width: 32px;
+    border-radius: 30px;
+    background-color: #005D7A;
+    top: 18px;
+    bottom: 0;
+    margin: 0 auto;
+    /* 製作第2、3條 >> 利用原線條做陰影 */
+    box-shadow: 0 10px 0 #005D7A, 0 -10px 0 #005D7A;
+}
+
+#menu-control {
+    position: absolute;
+    z-index: -10;
+    opacity: 0;
+}
+
+span {
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+    display: none;
+    overflow: hidden;
+}
+
+.menu {
+    display: flex;
+    font-size: 22px;
+}
+
+.menu li a {
+    /* 要設定 block 屬性，才會有動畫效果 */
+    display: block;
+    color: black;
+    padding: 30px 28px;
+}
+
+/* 動畫：屬性 時間 次數 */
+.menu li a:hover {
+    background-color: #C6F4ED;
+    animation: swing 0.5s 1;
+}
+
+@keyframes swing {
+    15% {
+        transform: translate(5px);
+    }
+
+    60% {
+        transform: translate(-2.5px);
+    }
+
+    100% {
+        transform: translate(0px);
+    }
+}
+
+.menu li a:active {
+    transform: scale(.6);
+}
+
+@media(max-width:884px) {
+    .menu {
+        display: block;
+        width: 100%;
+        text-align: center;
+        left: -100%;
+        transition: .5s;
+    }
+
+    .menu li a {
+        display: block;
+        background-color: rgb(245, 245, 245);
+        padding: 30px 10px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    span {
+        display: block;
+    }
+
+    #menu-control~.menu li {
+        height: 0;
+        overflow: hidden;
+        transition: height 400ms cubic-bezier(.66, .07, .29, .98);
+    }
+
+    /* 使用 css 選取器中的 checked 狀態，並要選取到 header 裡面的 menu */
+    #menu-control:checked~.menu li {
+        height: 4em;
+        transition: height 400ms cubic-bezier(.66, .07, .29, .98);
+    }
+}
+
+/* 首頁背景設定 */
+.banner {
+    /* background: url(https://upload.cc/i1/2021/03/03/otl2OE.png); */
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 首頁背景影片 */
+.videoBG {
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7;
+    filter: contrast(1.6) grayscale(.9);
+}
+
+video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/* banner 文字動畫 */
+.textAnimation {
+    position: absolute;
+}
+
+/* banner 文字底層 */
+.textAnimation h2 {
+    position: relative;
+    font-size: 66px;
+    font-family: 'Poppins';
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 0.07em;
+    -webkit-text-stroke: 0.2vw #6caaa6;
+}
+
+/* banner 文字上層 */
+.textAnimation h2::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: #005D7A;
+    -webkit-text-stroke: 0.2vw #005D7A;
+    border-right: 2px solid #005D7A;
+    overflow: hidden;
+    text-shadow: rgb(255, 255, 255) 1px 1px 7px;
+    animation: animate 6s cubic-bezier(.37, .25, .02, 1.33) infinite;
+}
+
+@keyframes animate {
+
+    0%,
+    10%,
+    100% {
+        width: 0;
+    }
+
+    40%,
+    75%,
+    90% {
+        width: 100%
+    }
+}
+
+@media(max-width:884px) {
+    .textAnimation h2 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:884px) {
+    .textAnimation h2 {
+        font-size: 40px;
+    }
+}
+
+@media(max-width:414px) {
+    .textAnimation h2 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:320px) {
+    .textAnimation h2 {
+        font-size: 24px;
+    }
+}
+
+/* 自我簡介-背景 */
+.about {
+    background: url(/images/background/ABout\ me\ BG.svg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+/* 自我簡介-左半邊 */
+.bio {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 5px 5px 5px;
+}
+
+/* 自我簡介-大頭照 */
+.headShot {
+    width: 185px;
+    height: 186px;
+    text-align: center;
+}
+
+/* 自我簡介-英文名字 */
+.bio-name {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    color: #5EFFE6;
+    padding: 30px 0 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+/* 自我簡介-英文名字下底線 */
+.bio-name::after {
+    content: '';
+    position: absolute;
+    top: 90px;
+    left: -50px;
+    width: 285px;
+    height: 1.5px;
+    background-color: white;
+}
+
+/* 自我簡介-左半邊內容 */
+.bio-content {
+    letter-spacing: 0.05em;
+    display: flex;
+    font-weight: 500;
+    font-size: 16px;
+    padding: 25px 22px 30px 22px;
+}
+
+.bio-content p {
+    display: inline-block;
+}
+
+.bio-columns {
+    padding: 5px 1px;
+}
+
+/* 自我簡介-左半邊內容-文字間距微調 */
+.bio-columns p {
+    padding-left: 5px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* 自我簡介-右半邊內容 */
+.aboutMe-content {
+    font-size: 22px;
+    padding: 28px;
+}
+
+/* 自我簡介-右半邊內容-主標題 */
+.aboutMe-content h3 {
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 0.05em;
+    color: white;
+    padding-bottom: 30px;
+}
+
+/* 自我簡介-右半邊內容-文字段落 */
+.aboutMe-content p {
+    letter-spacing: 0.1em;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    line-height: 50px;
+}
+
+/* 自我簡介-右半邊內容-第一段文字 */
+.textPast {
+    padding-bottom: 40px;
+}
+
+@media(max-width:1366px) {
+    .aboutMe-content {
+        padding: 30px 5px;
+    }
+}
+
+@media(max-width:884px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 135px 0 100px 0;
+        height: auto;
+    }
+
+    .bio {
+        padding: 10px;
+    }
+
+    .bio-name {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 20px;
+        padding: 30px 0 20px 0;
+    }
+
+    .bio-name::after {
+        top: 75px;
+        left: -65px;
+        width: 280px;
+        background-color: white;
+    }
+
+    .bio-columns p {
+        font-size: 15px;
+        padding: 1px 5px;
+        line-height: 10px;
+    }
+
+    .aboutMe-content {
+        padding: 2px;
+        text-align: center;
+    }
+
+    .aboutMe-content h3 {
+        font-size: 35px;
+        padding: 5px 0 15px 0;
+    }
+
+    .aboutMe-content p {
+        font-size: 17px;
+        line-height: 33px;
+    }
+
+    .textPast {
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width:414px) {
+    .about {
+        padding-top: 115px;
+        height: auto;
+    }
+
+    .bio {
+        width: 280px;
+        padding: 10px 0;
+    }
+
+    .bio-name {
+        font-size: 18px;
+        line-height: 16px;
+        padding: 30px 0 10px 0;
+    }
+
+    .bio-name::after {
+        content: '';
+        position: absolute;
+        top: 66px;
+        left: -50px;
+        width: 230px;
+        height: 1.5px;
+        background-color: white;
+    }
+
+    .bio-columns {
+        width: 235px;
+        padding: 1px;
+    }
+
+    .bio-columns p {
+        font-size: 12px;
+    }
+
+    .aboutMe-content h3 {
+        font-size: 30px;
+    }
+
+    .aboutMe-content p {
+        width: 325px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:320px) {
+
+    .aboutMe-content p {
+        width: 250px;
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+/* 經歷-背景 */
+.experience {
+    background: url(/images/background/Experience\ BG.svg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: white;
+    padding: 0 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 經歷-整體內容 */
+.experience-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+/* 經歷-標題 */
+.experience h3 {
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 0.05em;
+    padding: 185px 0 40px 0;
+    text-align: center;
+}
+
+/* 經歷-第一份工作 */
+.work {
+    display: flex;
+    align-items: flex-start;
+    letter-spacing: 0.05em;
+}
+
+.company {
+    margin: 15px 0;
+    text-align: center;
+    width: 170px;
+}
+
+.company img {
+    width: 42%;
+}
+
+.company p {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 2px 0;
+}
+
+.work-description {
+    display: flex;
+    align-items: center;
+    line-height: 35px;
+    padding: 10px;
+}
+
+.job {
+    width: 450px;
+    padding: 0 40px;
+}
+
+.job-title,
+.job-skill {
+    color: #5EFFE6;
+    font-size: 21px;
+    line-height: 35px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-align: left;
+    padding: 7px 0;
+}
+
+.job p,
+.skills p {
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: 0.07em;
+    text-align: left;
+}
+
+@media(max-width:1366px) {
+    .experience {
+        padding-bottom: 60px;
+    }
+
+    .experience {
+        height: auto;
+    }
+
+    .experience h3 {
+        font-size: 40px;
+        padding: 145px 0 20px 0;
+    }
+
+    .company img {
+        width: 40%;
+    }
+
+    .work-description {
+        padding: 10px
+    }
+
+    .job {
+        width: 380px;
+        padding: 0 20px;
+    }
+
+    .job-title,
+    .job-skill {
+        color: #5EFFE6;
+        font-size: 20px;
+        text-align: left;
+        padding: 4px 0;
+    }
+
+    .job p,
+    .skills p {
+        font-size: 17px;
+        line-height: 30px;
+        text-align: left;
+    }
+}
+
+@media(max-width:884px) {
+    .experience-content {
+        padding: 20px 0 100px 0;
+    }
+
+    .experience h3 {
+        font-size: 35px;
+        padding-bottom: 50px;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .company {
+        margin: 5px 0;
+        text-align: center;
+        width: 145px;
+    }
+
+    .company img {
+        width: 40%;
+    }
+
+    .company p {
+        display: none;
+    }
+
+    .work-description {
+        flex-direction: column;
+        align-items: flex-start;
+        line-height: 35px;
+        padding: 0 0 16px 0;
+    }
+
+    .job {
+        width: 325px;
+        padding: 0;
+    }
+
+    .job-title,
+    .job-skill {
+        color: #5EFFE6;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 500;
+        letter-spacing: 0.08em;
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .job-skill {
+        display: none;
+    }
+
+    .job p,
+    .skills p {
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 32px;
+    }
+}
+
+@media(max-width:414px) {
+    .experience-content {
+        padding: 0 0 100px 0;
+    }
+
+    .experience h3 {
+        font-size: 30px;
+        padding: 130px 0 35px 0;
+    }
+
+    .company img {
+        width: 32%;
+    }
+
+    .job-title,
+    .job-skill {
+        color: #5EFFE6;
+        font-size: 18px;
+        line-height: 25px;
+        padding-bottom: 12px;
+    }
+
+    .job p,
+    .skills p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:320px) {
+    .work-description {
+        width: 260px;
+        padding: 0 0 20px 0;
+    }
+}
+
+/* 專案 */
+.projects {
+    background: url(/images/background/Projects\ BG.svg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: left top;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+/* 專案-標題 */
+.projects h3 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 45px;
+    letter-spacing: 0.05em;
+    color: black;
+    padding: 185px 0 50px 0;
+}
+
+/* 兩個專案的外層設定 */
+.webDesign {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/* 兩個專案的間隔 */
+.webDesign li {
+    padding: 10px 25px;
+}
+
+/* 兩個專案-圖片屬性一起設定 */
+.webDesign img {
+    width: 100%;
+    height: auto;
+}
+
+/* 兩個專案-連結下文字覆蓋效果設定：透明隱藏 */
+.link p {
+    position: absolute;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+/* 兩個專案-連結下文字覆蓋效果設定：透明取消 */
+.link:hover p {
+    opacity: 1;
+}
+
+/* 兩個專案-圖片變暗效果設定：正常亮度 */
+.link img {
+    filter: brightness(1);
+    transition: .8s ease;
+}
+
+/* 兩個專案-圖片變暗效果設定：暗 */
+.link:hover img {
+    filter: brightness(.2);
+}
+
+/* 兩個專案-連結屬性一起設定：用 flex 垂直置中控制 position: absolute */
+.link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+}
+
+/* 專案-作品名稱 */
+.projects-name {
+    text-align: center;
+}
+
+/* 專案-作品標題 */
+.projects-name h5 {
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: 0.12em;
+    color: #005D7A;
+    padding: 10px 5px 5px 5px;
+}
+
+.projects-name p {
+    font-size: 18px;
+}
+
+@media(max-width:1366px) {
+    .projects h3 {
+        padding: 185px 0 25px 0;
+    }
+}
+
+@media(max-width:884px) {
+    .link {
+        font-size: 20px;
+    }
+
+    .projects {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
+    .projects h3 {
+        font-size: 35px;
+        text-shadow: rgb(255, 255, 255) .1px .1px 30px;
+    }
+
+    .webDesign {
+        flex-direction: column;
+    }
+
+    .webDesign li {
+        padding: 20px;
+    }
+}
+
+@media(max-width:414px) {
+    .link {
+        font-size: 16px;
+    }
+
+    .projects h3 {
+        font-size: 30px;
+        padding: 120px 0 20px 0;
+    }
+
+    .webDesign li {
+        padding: 8px;
+    }
+
+    .projects-name h5 {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .projects-name p {
+        font-size: 12px;
+        padding: 0;
+    }
+
+    .webDesign img {
+        width: 35%;
+    }
+}
+
+/* 聯絡 */
+.contact {
+    background: url(/images/background/Contact\ BG.svg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: right bottom;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 聯絡-主標 */
+.contact h3 {
+    font-weight: 600;
+    font-size: 45px;
+    padding: 60px 10px;
+    line-height: 55px;
+}
+
+/* 聯絡-信箱icon */
+.emailIcon {
+    height: 40px;
+    width: 50px;
+    margin: 25px;
+}
+
+.contact p {
+    font-size: 22px;
+    line-height: 45px;
+}
+
+.contact h4 {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 45px;
+}
+
+/* 版權註明 */
+.copyright {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+}
+
+.copyright p {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+}
+
+@media(max-width:884px) {
+    .contact {
+        height: auto;
+    }
+
+    .contact h3 {
+        font-size: 32px;
+        line-height: 60px;
+        width: 450px;
+        padding: 160px 30px 70px 30px;
+        text-align: center;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .contact h4 {
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 35px;
+        padding-bottom: 100px;
+    }
+
+    .copyright {
+        right: 14px;
+        bottom: 8px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:414px) {
+    .contact h3 {
+        font-size: 24px;
+        line-height: 40px;
+        width: 260px;
+        padding: 110px 10px 60px 10px;
+    }
+
+    .contact p {
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+    .contact h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 35px;
+        text-shadow: rgb(255, 255, 255) .1px .1px 30px;
+        padding-bottom: 220px;
+    }
+}
+
+@media(max-width:320px) {
+    .contact h3 {
+        font-size: 20px;
+        line-height: 36px;
+        width: 250px;
+        padding: 120px 5px 50px 5px;
+    }
+
+    .copyright p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
