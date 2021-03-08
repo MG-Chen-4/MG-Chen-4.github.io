@@ -144,6 +144,10 @@ table {
     box-sizing: border-box;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
@@ -161,7 +165,7 @@ a {
 
 /* 主架構 */
 .container {
-    margin: 0 auto;
+    /* margin: 0 auto; */
     max-width: 100vw;
 }
 
@@ -978,18 +982,9 @@ video {
         font-size: 16px;
     }
 
-    .projects {
-        height: auto;
-        padding-bottom: 100px;
-    }
-
     .projects h3 {
         font-size: 30px;
         padding: 120px 0 20px 0;
-    }
-
-    .webDesign {
-        flex-direction: column;
     }
 
     .webDesign li {
@@ -1007,7 +1002,7 @@ video {
     }
 
     .webDesign img {
-        width: 50%;
+        width: 35%;
     }
 }
 
