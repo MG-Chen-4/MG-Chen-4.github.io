@@ -445,7 +445,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5px;
+    padding: 60px 5px 5px 5px;
 }
 
 /* 自我簡介-大頭照 */
@@ -484,7 +484,7 @@ video {
     display: flex;
     font-weight: 500;
     font-size: 16px;
-    padding: 22px;
+    padding: 25px 22px 30px 22px;
 }
 
 .bio-content p {
@@ -649,7 +649,7 @@ video {
     background-position: center;
     position: relative;
     color: white;
-    padding: 0px 20px 10px 20px;
+    padding: 0 10px 20px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -661,6 +661,7 @@ video {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+
 }
 
 /* 經歷-標題 */
@@ -668,7 +669,7 @@ video {
     font-weight: 900;
     font-size: 45px;
     letter-spacing: 0.05em;
-    padding: 185px 0 30px 0;
+    padding: 185px 0 40px 0;
     text-align: center;
 }
 
@@ -685,6 +686,10 @@ video {
     width: 170px;
 }
 
+.company img {
+    width: 42%;
+}
+
 .company p {
     font-size: 16px;
     line-height: 30px;
@@ -695,7 +700,12 @@ video {
     display: flex;
     align-items: center;
     line-height: 35px;
-    padding: 10px 90px;
+    padding: 10px;
+}
+
+.job {
+    width: 450px;
+    padding: 0 40px;
 }
 
 .job-title,
@@ -709,25 +719,21 @@ video {
     padding: 7px 0;
 }
 
-.skills {
-    padding-left: 90px;
-}
-
 .job p,
 .skills p {
     font-size: 18px;
-    line-height: 34px;
+    line-height: 32px;
     letter-spacing: 0.07em;
     text-align: left;
 }
 
-@media(max-width:1024px) {
+@media(max-width:1366px) {
     .experience {
-        height: auto;
+        padding-bottom: 60px;
     }
 
-    .experience-content {
-        padding: 0 0 100px 50px;
+    .experience {
+        height: auto;
     }
 
     .experience h3 {
@@ -735,26 +741,31 @@ video {
         padding: 145px 0 20px 0;
     }
 
+    .company img {
+        width: 40%;
+    }
+
     .work-description {
-        padding: 10px 70px;
+        padding: 10px
+    }
+
+    .job {
+        width: 380px;
+        padding: 0 20px;
     }
 
     .job-title,
     .job-skill {
         color: #5EFFE6;
-        font-size: 21px;
+        font-size: 20px;
         text-align: left;
         padding: 4px 0;
-    }
-
-    .skills {
-        padding-left: 70px;
     }
 
     .job p,
     .skills p {
         font-size: 17px;
-        line-height: 32px;
+        line-height: 30px;
         text-align: left;
     }
 }
@@ -781,7 +792,7 @@ video {
     }
 
     .company img {
-        width: 45%;
+        width: 40%;
     }
 
     .company p {
@@ -793,6 +804,11 @@ video {
         align-items: flex-start;
         line-height: 35px;
         padding: 0 0 16px 0;
+    }
+
+    .job {
+        width: 325px;
+        padding: 0;
     }
 
     .job-title,
@@ -808,10 +824,6 @@ video {
 
     .job-skill {
         display: none;
-    }
-
-    .skills {
-        padding-left: 0px;
     }
 
     .job p,
