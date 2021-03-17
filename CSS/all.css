@@ -866,6 +866,7 @@ video {
     .skills p {
         font-size: 14px;
         line-height: 28px;
+        padding: 0 25px;
     }
 }
 
