@@ -183,7 +183,7 @@ a {
 
 /* Logo 圖片取代文字 */
 .logo {
-    background: url(/images/logo/YIN\ YIN.svg) no-repeat;
+    background: url(/images/logo/YINYIN.svg) no-repeat;
     width: 143px;
     height: 30px;
     text-indent: 101%;
@@ -426,7 +426,7 @@ video {
 
 /* 自我簡介-背景 */
 .about {
-    background: url(/images/background/ABout\ me\ BG.svg);
+    background: url(/images/background/ABoutMeBG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -648,7 +648,7 @@ video {
 
 /* 經歷-背景 */
 .experience {
-    background: url(/images/background/Experience\ BG.svg);
+    background: url(/images/background/ExperienceBG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -879,7 +879,7 @@ video {
 
 /* 專案 */
 .projects {
-    background: url(/images/background/Projects\ BG.svg);
+    background: url(/images/background/ProjectsBG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -961,11 +961,11 @@ video {
 /* 專案-作品標題 */
 .projects-name h5 {
     font-weight: 900;
-    font-size: 26px;
+    font-size: 24px;
     line-height: 40px;
     letter-spacing: 0.12em;
     color: #005D7A;
-    padding: 10px 5px 5px 5px;
+    padding: 5px;
 }
 
 .projects-name p {
@@ -991,6 +991,10 @@ video {
     .projects h3 {
         font-size: 35px;
         text-shadow: rgb(255, 255, 255) .1px .1px 30px;
+    }
+
+    .projects-name h5 {
+        font-size: 18px;
     }
 
     .webDesign {
@@ -1033,7 +1037,7 @@ video {
 
 /* 聯絡 */
 .contact {
-    background: url(/images/background/Contact\ BG.svg);
+    background: url(/images/background/ContactBG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
