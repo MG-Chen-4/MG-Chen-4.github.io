@@ -426,7 +426,7 @@ video {
 
 /* 自我簡介-背景 */
 .about {
-    background: url(/images/background/ABoutMeBG.svg);
+    background: url(/images/background/ABoutMeBG.png);
     height: 100vh;
     width: 100vw;
     background-size: cover;
