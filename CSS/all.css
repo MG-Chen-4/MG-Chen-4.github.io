@@ -144,10 +144,6 @@ table {
     box-sizing: border-box;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.2;
@@ -165,13 +161,12 @@ a {
 
 /* 主架構 */
 .container {
-    /* margin: 0 auto; */
-    max-width: 100%;
-    margin-right: calc(100% - 100vw);
+    margin: 0 auto;
+    max-width: 100vw;
 }
 
 .header {
-    width: 100%;
+    width: 100vw;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
     background: #FFFFFF;
     display: flex;
@@ -183,7 +178,7 @@ a {
 
 /* Logo 圖片取代文字 */
 .logo {
-    background: url(/images/logo/YINYIN.svg) no-repeat;
+    background: url(/images/logo/YIN\ YIN.svg) no-repeat;
     width: 143px;
     height: 30px;
     text-indent: 101%;
@@ -426,7 +421,7 @@ video {
 
 /* 自我簡介-背景 */
 .about {
-    background: url(/images/background/ABoutMeBG.png);
+    background: url(/images/background/ABout\ me\ BG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -445,7 +440,7 @@ video {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 60px 5px 5px 5px;
+    padding: 5px;
 }
 
 /* 自我簡介-大頭照 */
@@ -484,7 +479,7 @@ video {
     display: flex;
     font-weight: 500;
     font-size: 16px;
-    padding: 25px 22px 30px 22px;
+    padding: 22px;
 }
 
 .bio-content p {
@@ -515,7 +510,7 @@ video {
     font-size: 45px;
     letter-spacing: 0.05em;
     color: white;
-    padding-bottom: 30px;
+    padding-bottom: 35px;
 }
 
 /* 自我簡介-右半邊內容-文字段落 */
@@ -530,12 +525,6 @@ video {
 /* 自我簡介-右半邊內容-第一段文字 */
 .textPast {
     padding-bottom: 40px;
-}
-
-@media(max-width:1366px) {
-    .aboutMe-content {
-        padding: 30px 5px;
-    }
 }
 
 @media(max-width:884px) {
@@ -648,14 +637,14 @@ video {
 
 /* 經歷-背景 */
 .experience {
-    background: url(/images/background/ExperienceBG.svg);
+    background: url(/images/background/Experience\ BG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
     background-position: center;
     position: relative;
     color: white;
-    padding: 0 10px 20px 10px;
+    padding: 0px 20px 10px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -667,7 +656,6 @@ video {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-
 }
 
 /* 經歷-標題 */
@@ -675,7 +663,7 @@ video {
     font-weight: 900;
     font-size: 45px;
     letter-spacing: 0.05em;
-    padding: 185px 0 40px 0;
+    padding: 185px 0 30px 0;
     text-align: center;
 }
 
@@ -692,26 +680,17 @@ video {
     width: 170px;
 }
 
-.company img {
-    width: 42%;
-}
-
 .company p {
     font-size: 16px;
     line-height: 30px;
-    padding: 2px 0;
+    padding: 10px 0;
 }
 
 .work-description {
     display: flex;
     align-items: center;
     line-height: 35px;
-    padding: 10px;
-}
-
-.job {
-    width: 450px;
-    padding: 0 40px;
+    padding: 10px 90px;
 }
 
 .job-title,
@@ -725,21 +704,25 @@ video {
     padding: 7px 0;
 }
 
+.skills {
+    padding-left: 90px;
+}
+
 .job p,
 .skills p {
     font-size: 18px;
-    line-height: 32px;
+    line-height: 34px;
     letter-spacing: 0.07em;
     text-align: left;
 }
 
-@media(max-width:1366px) {
-    .experience {
-        padding-bottom: 60px;
-    }
-
+@media(max-width:1024px) {
     .experience {
         height: auto;
+    }
+
+    .experience-content {
+        padding: 0 0 100px 50px;
     }
 
     .experience h3 {
@@ -747,31 +730,26 @@ video {
         padding: 145px 0 20px 0;
     }
 
-    .company img {
-        width: 40%;
-    }
-
     .work-description {
-        padding: 10px
-    }
-
-    .job {
-        width: 380px;
-        padding: 0 20px;
+        padding: 10px 70px;
     }
 
     .job-title,
     .job-skill {
         color: #5EFFE6;
-        font-size: 20px;
+        font-size: 21px;
         text-align: left;
         padding: 4px 0;
+    }
+
+    .skills {
+        padding-left: 70px;
     }
 
     .job p,
     .skills p {
         font-size: 17px;
-        line-height: 30px;
+        line-height: 32px;
         text-align: left;
     }
 }
@@ -798,7 +776,7 @@ video {
     }
 
     .company img {
-        width: 40%;
+        width: 45%;
     }
 
     .company p {
@@ -810,11 +788,6 @@ video {
         align-items: flex-start;
         line-height: 35px;
         padding: 0 0 16px 0;
-    }
-
-    .job {
-        width: 325px;
-        padding: 0;
     }
 
     .job-title,
@@ -830,6 +803,10 @@ video {
 
     .job-skill {
         display: none;
+    }
+
+    .skills {
+        padding-left: 0px;
     }
 
     .job p,
@@ -866,7 +843,6 @@ video {
     .skills p {
         font-size: 14px;
         line-height: 28px;
-        padding: 0 25px;
     }
 }
 
@@ -879,7 +855,7 @@ video {
 
 /* 專案 */
 .projects {
-    background: url(/images/background/ProjectsBG.svg);
+    background: url(/images/background/Projects\ BG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -896,7 +872,7 @@ video {
     font-size: 45px;
     letter-spacing: 0.05em;
     color: black;
-    padding: 185px 0 50px 0;
+    padding: 185px 0 67px 0;
 }
 
 /* 兩個專案的外層設定 */
@@ -961,21 +937,15 @@ video {
 /* 專案-作品標題 */
 .projects-name h5 {
     font-weight: 900;
-    font-size: 24px;
+    font-size: 26px;
     line-height: 40px;
     letter-spacing: 0.12em;
     color: #005D7A;
-    padding: 5px;
+    padding: 10px 5px 5px 5px;
 }
 
 .projects-name p {
     font-size: 18px;
-}
-
-@media(max-width:1366px) {
-    .projects h3 {
-        padding: 185px 0 25px 0;
-    }
 }
 
 @media(max-width:884px) {
@@ -990,11 +960,8 @@ video {
 
     .projects h3 {
         font-size: 35px;
+        padding-bottom: 20px;
         text-shadow: rgb(255, 255, 255) .1px .1px 30px;
-    }
-
-    .projects-name h5 {
-        font-size: 18px;
     }
 
     .webDesign {
@@ -1011,9 +978,18 @@ video {
         font-size: 16px;
     }
 
+    .projects {
+        height: auto;
+        padding-bottom: 100px;
+    }
+
     .projects h3 {
         font-size: 30px;
         padding: 120px 0 20px 0;
+    }
+
+    .webDesign {
+        flex-direction: column;
     }
 
     .webDesign li {
@@ -1031,13 +1007,13 @@ video {
     }
 
     .webDesign img {
-        width: 35%;
+        width: 50%;
     }
 }
 
 /* 聯絡 */
 .contact {
-    background: url(/images/background/ContactBG.svg);
+    background: url(/images/background/Contact\ BG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
