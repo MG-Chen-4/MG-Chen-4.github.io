@@ -421,7 +421,7 @@ video {
 
 /* 自我簡介-背景 */
 .about {
-    background: url(/images/background/ABoutmeBG.svg);
+    background: url(/images/background/ABoutMeBG.svg);
     height: 100vh;
     width: 100vw;
     background-size: cover;
@@ -681,7 +681,7 @@ video {
 }
 
 .company img {
-    padding: 10px 0 5px 0;
+    padding: 7px 0 5px 0;
 }
 
 .company p {
