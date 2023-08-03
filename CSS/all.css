@@ -857,10 +857,10 @@ video {
     }
 }
 
-/* 專案 */
+/* 專案-這邊統一更新為 Certificate */
 .projects {
     background: url(/images/background/ProjectsBG.svg);
-    /* height: 100vh; */
+    height: 100vh;
     width: 100vw;
     background-size: cover;
     background-position: left top;
