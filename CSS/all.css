@@ -638,7 +638,7 @@ video {
 /* 經歷-背景 */
 .experience {
     background: url(/images/background/ExperienceBG.svg);
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background-size: cover;
     background-position: center;
@@ -860,7 +860,7 @@ video {
 /* 專案 */
 .projects {
     background: url(/images/background/ProjectsBG.svg);
-    height: 100vh;
+    /* height: 100vh; */
     width: 100vw;
     background-size: cover;
     background-position: left top;
